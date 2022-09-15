@@ -4,7 +4,7 @@ from .file import *
 
 class FileSystem:
     def __init__(self) -> None:
-        self.rootfs = Directory(None)
+        self.rootfs = Directory(None,"")
         self.current_working_directory = self.rootfs
 
     def find_path(self, path: str):
